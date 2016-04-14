@@ -501,6 +501,9 @@
     <rooms name="Red">
       <room>rooms\Red1</room>
     </rooms>
+    <rooms name="Blue1">
+      <room>rooms\Blue11</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
