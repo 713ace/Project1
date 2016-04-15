@@ -644,8 +644,14 @@
         <object>objects\object92</object>
       </objects>
     </objects>
+    <objects name="Control">
+      <object>objects\obj_background</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <rooms name="Menu">
+      <room>rooms\levelSelect</room>
+    </rooms>
     <rooms name="Red">
       <room>rooms\Red1</room>
     </rooms>
