@@ -26,16 +26,27 @@
           <argument>
             <kind>1</kind>
             <string>randomize();
-background_index[0] = set1_background;
-background_index[1] = set2_background;
-background_index[2] = set3_background;
-background_index[3] = set4_background;
+count = 0;
+depth = -1000;
+count2 = 0;
+random1x = random_range(30,1300)
+random1y = random_range(30,720)
+random2x = random_range(30,1300)
+random2y = random_range(30,720)
+random3x = random_range(30,1300)
+random3y = random_range(30,720)
+random4x = random_range(30,1300)
+random4y = random_range(30,720)
+instance_create(random1x,random1y,blue_dec)
+instance_create(random2x,random2y,red_dec)
+instance_create(random3x,random3y,green_dec)
+instance_create(random4x,random4y,brown_dec)
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="4">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -52,7 +63,16 @@ background_index[3] = set4_background;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>selected = choose(set1_background,set4_background,set2_background,set3_background);
+            <string>count += 1;
+count2 += 1;
+if count &gt;= 5
+{
+    count = 0;
+}
+if (count2 &gt;= 20)
+{
+    room = levelSelect
+}
 </string>
           </argument>
         </arguments>
@@ -75,7 +95,33 @@ background_index[3] = set4_background;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_background_tiled(selected,0,0)
+            <string>draw_set_font(font1)
+draw_set_halign(fa_center)
+draw_set_valign(fa_center)
+if (count = 0)
+{
+    draw_text_colour(((room_width)/2),((room_height)-150),"Loading",c_white,c_blue,c_white,c_green,1)
+}
+if (count = 1)
+{
+    draw_text_colour(((room_width)/2),((room_height)-150),"Loading.",c_white,c_blue,c_white,c_green,1)
+}
+if (count = 2)
+{
+    draw_text_colour(((room_width)/2),((room_height)-150),"Loading..",c_white,c_blue,c_white,c_green,1)
+}
+if (count = 3)
+{
+    draw_text_colour(((room_width)/2),((room_height)-150),"Loading...",c_white,c_blue,c_white,c_green,1)
+}
+if (count = 4)
+{
+    draw_text_colour(((room_width)/2),((room_height)-150),"Loading..",c_white,c_blue,c_white,c_green,1)
+}
+if (count = 5)
+{
+    draw_text_colour(((room_width)/2),((room_height)-150),"Loading.",c_white,c_blue,c_white,c_green,1)
+}
 </string>
           </argument>
         </arguments>

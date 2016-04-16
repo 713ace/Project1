@@ -513,6 +513,7 @@
       <sprite>sprites\sprite473_red_sliderUp</sprite>
       <sprite>sprites\sprite474_red_tick</sprite>
       <sprite>sprites\sprite475_yellow_boxCheckmark</sprite>
+      <sprite>sprites\spr_load</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -538,6 +539,12 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font1</font>
+    <font>fonts\font2</font>
+    <font>fonts\font3</font>
+    <font>fonts\font4</font>
+  </fonts>
   <objects name="objects">
     <objects name="Players">
       <object>objects\obj_playerblue</object>
@@ -646,10 +653,18 @@
     </objects>
     <objects name="Control">
       <object>objects\obj_background</object>
+      <object>objects\obj_loadText</object>
+    </objects>
+    <objects name="Decorations">
+      <object>objects\blue_dec</object>
+      <object>objects\red_dec</object>
+      <object>objects\green_dec</object>
+      <object>objects\brown_dec</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Menu">
+      <room>rooms\gameLoad</room>
       <room>rooms\levelSelect</room>
     </rooms>
     <rooms name="Red">
