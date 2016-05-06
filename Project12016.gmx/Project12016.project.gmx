@@ -515,6 +515,9 @@
       <sprite>sprites\sprite475_yellow_boxCheckmark</sprite>
       <sprite>sprites\spr_load</sprite>
     </sprites>
+    <sprites name="Test">
+      <sprite>sprites\Test</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tan">
@@ -536,6 +539,9 @@
       <background>background\set4_hills</background>
       <background>background\set4_tiles</background>
       <background>background\set4_background</background>
+    </backgrounds>
+    <backgrounds name="Menus">
+      <background>background\WorldSelect</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
